@@ -1,0 +1,116 @@
+
+#menu-btn {
+    font-size: 3.5rem;
+    cursor: pointer;
+    color: var(--black);
+    display: none;
+}
+/* Ipad -> Mobile */
+
+@media (max-width: 1023px) {
+    .hide-on-mobile-ipad {
+        display: none;
+    }
+}
+
+
+/* Ipad */
+
+@media (max-width: 1043px) {
+    .hide-on-ipad {
+        display: none;
+    }
+    
+    .nav-item-left{
+        display: none;
+    }
+    #menu-btn {
+        position: absolute;
+        left: 50px;
+        top: 50%;
+        z-index: 1000;
+        display: inline-block;
+        transition: .2s linear;
+    }
+    #menu-btn.fa-times {
+        transform: rotate(180deg);
+    }
+    
+    .nav-item-right .nav-info .active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    .nav-item-right .nav-info {
+        position: absolute;
+        top: 99%;
+        left: 0;
+        right: 0;
+        background-color: var(--white);
+        border-top: var(--border);
+        padding: 2rem;
+        transition: .2s linear;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    .nav-item-right .nav-item {
+        display: block;
+        margin: 3.5rem;
+        text-align: center;
+    }
+    #menu-btn {
+        display: inline-block;
+        transition: .2s linear;
+    }
+
+    #menu-btn.fa-times {
+        transform: rotate(180deg);
+    }
+
+    .nav-item-righ .nav-item {
+        z-index: 1000;
+        position: absolute;
+        top: 99%;
+        left: 0;
+        right: 0;
+        background-color: var(--white);
+        border-top: var(--border);
+        padding: 2rem;
+        transition: .2s linear;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .nav-item-righ .nav-item.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .nav-item-righ .nav-item a {
+        display: block;
+        margin: 3.5rem;
+        text-align: center;
+    }
+}
+
+
+/* Small Tablet */
+
+@media (max-width: 767px) {
+    .hide-on-tablet {
+        display: none;
+    }
+    
+    .nav-item-left{
+        display: none;
+    }
+}
+
+
+/* Mobile */
+
+@media (max-width: 599px) {
+    .hide-on-mobile {
+        display: none;
+    }
+    
+    .nav-item-left{
+        display: none;
+    }
+    
+}
